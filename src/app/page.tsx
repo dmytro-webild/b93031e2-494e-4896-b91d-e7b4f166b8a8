@@ -9,9 +9,16 @@ import ProductCardFour from '@/components/sections/product/ProductCardFour';
 import TestimonialCardTen from '@/components/sections/testimonial/TestimonialCardTen';
 import ContactCenter from '@/components/sections/contact/ContactCenter';
 import FooterLogoReveal from '@/components/sections/footer/FooterLogoReveal';
-import { Sparkles } from 'lucide-react';
+import { Sparkles, MessageCircle } from 'lucide-react';
 
 export default function LandingPage() {
+  const handleBookingClick = () => {
+    const phoneNumber = "6288290739044";
+    const message = "Halo, saya ingin membuat booking untuk barbershop";
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
+  };
+
   return (
     <ThemeProvider
       defaultButtonVariant="elastic-effect"
@@ -47,7 +54,7 @@ export default function LandingPage() {
           tag="⭐ 4.9 Rating • 142+ Reviews"
           buttons={[
             { text: "Hubungi Sekarang", href: "tel:0882-9073-904" },
-            { text: "Booking Appointment" }
+            { text: "Booking Appointment", onClick: handleBookingClick }
           ]}
           mediaItems={[
             {
@@ -104,19 +111,19 @@ export default function LandingPage() {
           tag="Layanan"
           plans={[
             {
-              id: "basic",              title: "Potongan Rambut Standar",              price: "Rp50.000",              period: "/potong",              imageSrc: "http://img.b2bpic.net/free-photo/front-view-barber-shop-concept_23-2148506290.jpg?_wi=2",              imageAlt: "fade haircut professional barber modern style",              button: { text: "Book Now" },
+              id: "basic",              title: "Potongan Rambut Standar",              price: "Rp50.000",              period: "/potong",              imageSrc: "http://img.b2bpic.net/free-photo/front-view-barber-shop-concept_23-2148506290.jpg?_wi=2",              imageAlt: "fade haircut professional barber modern style",              button: { text: "Book Now", onClick: handleBookingClick },
               features: [
                 "Potongan rambut standar 30 menit",                "Konsultasi gaya dengan barber",                "Finishing sempurna"
               ]
             },
             {
-              id: "pro",              title: "Potongan + Styling",              price: "Rp75.000",              period: "/sesi",              imageSrc: "http://img.b2bpic.net/free-photo/stylish-redhead-urban-traveller-male-sunglasses-holds-backpack-grey-background-studio_613910-1038.jpg?_wi=2",              imageAlt: "modern men hairstyle trendy cut",              button: { text: "Book Now" },
+              id: "pro",              title: "Potongan + Styling",              price: "Rp75.000",              period: "/sesi",              imageSrc: "http://img.b2bpic.net/free-photo/stylish-redhead-urban-traveller-male-sunglasses-holds-backpack-grey-background-studio_613910-1038.jpg?_wi=2",              imageAlt: "modern men hairstyle trendy cut",              button: { text: "Book Now", onClick: handleBookingClick },
               features: [
                 "Potongan rambut premium 45 menit",                "Styling khusus sesuai tren",                "Konsultasi gaya lengkap"
               ]
             },
             {
-              id: "premium",              title: "Potongan + Treatment",              price: "Rp100.000",              period: "/paket",              imageSrc: "http://img.b2bpic.net/free-photo/professional-barber-working-with-client-hairdressing-salon-styling-beard-with-trimmer_613910-5073.jpg?_wi=1",              imageAlt: "high fade haircut professional barber",              button: { text: "Book Now" },
+              id: "premium",              title: "Potongan + Treatment",              price: "Rp100.000",              period: "/paket",              imageSrc: "http://img.b2bpic.net/free-photo/professional-barber-working-with-client-hairdressing-salon-styling-beard-with-trimmer_613910-5073.jpg?_wi=1",              imageAlt: "high fade haircut professional barber",              button: { text: "Book Now", onClick: handleBookingClick },
               features: [
                 "Potongan rambut eksklusif 60 menit",                "Treatment rambut premium",                "Styling profesional"
               ]
@@ -209,11 +216,12 @@ export default function LandingPage() {
         <ContactCenter
           tag="Booking Appointment"
           title="Siap Potong Rambut Hari Ini?"
-          description="Pesan appointment Anda sekarang dan nikmati pengalaman cukur rambut terbaik. Hubungi kami atau gunakan form di bawah."
+          description="Pesan appointment Anda sekarang melalui WhatsApp dan nikmati pengalaman cukur rambut terbaik dengan langsung menghubungi kami."
           background={{ variant: "plain" }}
           useInvertedBackground={false}
           tagAnimation="slide-up"
-          buttonText="Booking Sekarang"
+          buttonText="Hubungi via WhatsApp"
+          onSubmit={handleBookingClick}
         />
       </div>
 
