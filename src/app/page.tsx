@@ -51,7 +51,7 @@ export default function LandingPage() {
           ]}
           mediaItems={[
             {
-              imageSrc: "http://img.b2bpic.net/free-photo/close-up-details-hairdresser-salon_23-2149205856.jpg",              imageAlt: "Zona Barbershop interior bersih dan nyaman"
+              imageSrc: "http://img.b2bpic.net/free-photo/close-up-details-hairdresser-salon_23-2149205856.jpg?_wi=1",              imageAlt: "Zona Barbershop interior bersih dan nyaman"
             },
             {
               imageSrc: "http://img.b2bpic.net/free-photo/funny-little-boy-is-getting-trendy-haircut-from-expirienced-barber-fashionable-hairdressing-salon-firs-time_613910-21469.jpg",              imageAlt: "Barber profesional sedang memotong rambut dengan teknik rapi"
@@ -79,15 +79,15 @@ export default function LandingPage() {
             },
             {
               id: 2,
-              title: "Minuman & Suasana Nyaman",              description: "Gratis kopi, teh, dan air mineral. Tempat yang bersih, rapi, dan dirancang untuk kenyamanan maksimal Anda.",              imageSrc: "http://img.b2bpic.net/free-photo/close-up-details-hairdresser-salon_23-2149205856.jpg",              imageAlt: "modern barbershop interior design clean cozy"
+              title: "Minuman & Suasana Nyaman",              description: "Gratis kopi, teh, dan air mineral. Tempat yang bersih, rapi, dan dirancang untuk kenyamanan maksimal Anda.",              imageSrc: "http://img.b2bpic.net/free-photo/close-up-details-hairdresser-salon_23-2149205856.jpg?_wi=2",              imageAlt: "modern barbershop interior design clean cozy"
             },
             {
               id: 3,
-              title: "Hasil Potongan Rapi",              description: "Setiap potongan dihandle dengan presisi tinggi menggunakan teknik dan peralatan profesional terkini.",              imageSrc: "http://img.b2bpic.net/free-photo/front-view-barber-shop-concept_23-2148506290.jpg",              imageAlt: "fade haircut professional barber modern style"
+              title: "Hasil Potongan Rapi",              description: "Setiap potongan dihandle dengan presisi tinggi menggunakan teknik dan peralatan profesional terkini.",              imageSrc: "http://img.b2bpic.net/free-photo/front-view-barber-shop-concept_23-2148506290.jpg?_wi=1",              imageAlt: "fade haircut professional barber modern style"
             },
             {
               id: 4,
-              title: "Harga Terjangkau",              description: "Kualitas premium dengan harga yang sangat terjangkau. Potongan rambut mulai dari Rp50.000.",              imageSrc: "http://img.b2bpic.net/free-photo/stylish-redhead-urban-traveller-male-sunglasses-holds-backpack-grey-background-studio_613910-1038.jpg",              imageAlt: "modern men hairstyle trendy cut"
+              title: "Harga Terjangkau",              description: "Kualitas premium dengan harga yang sangat terjangkau. Potongan rambut mulai dari Rp50.000.",              imageSrc: "http://img.b2bpic.net/free-photo/stylish-redhead-urban-traveller-male-sunglasses-holds-backpack-grey-background-studio_613910-1038.jpg?_wi=1",              imageAlt: "modern men hairstyle trendy cut"
             }
           ]}
           textboxLayout="default"
@@ -105,19 +105,19 @@ export default function LandingPage() {
           tag="Layanan"
           plans={[
             {
-              id: "basic",              title: "Potongan Rambut Standar",              price: "Rp50.000",              period: "/potong",              imageSrc: "http://img.b2bpic.net/free-photo/front-view-barber-shop-concept_23-2148506290.jpg",              imageAlt: "fade haircut professional barber modern style",              button: { text: "Book Now" },
+              id: "basic",              title: "Potongan Rambut Standar",              price: "Rp50.000",              period: "/potong",              imageSrc: "http://img.b2bpic.net/free-photo/front-view-barber-shop-concept_23-2148506290.jpg?_wi=2",              imageAlt: "fade haircut professional barber modern style",              button: { text: "Book Now" },
               features: [
                 "Potongan rambut standar 30 menit",                "Konsultasi gaya dengan barber",                "Finishing sempurna"
               ]
             },
             {
-              id: "pro",              title: "Potongan + Styling",              price: "Rp75.000",              period: "/sesi",              imageSrc: "http://img.b2bpic.net/free-photo/stylish-redhead-urban-traveller-male-sunglasses-holds-backpack-grey-background-studio_613910-1038.jpg",              imageAlt: "modern men hairstyle trendy cut",              button: { text: "Book Now" },
+              id: "pro",              title: "Potongan + Styling",              price: "Rp75.000",              period: "/sesi",              imageSrc: "http://img.b2bpic.net/free-photo/stylish-redhead-urban-traveller-male-sunglasses-holds-backpack-grey-background-studio_613910-1038.jpg?_wi=2",              imageAlt: "modern men hairstyle trendy cut",              button: { text: "Book Now" },
               features: [
                 "Potongan rambut premium 45 menit",                "Styling khusus sesuai tren",                "Konsultasi gaya lengkap"
               ]
             },
             {
-              id: "premium",              title: "Potongan + Treatment",              price: "Rp100.000",              period: "/paket",              imageSrc: "http://img.b2bpic.net/free-photo/professional-barber-working-with-client-hairdressing-salon-styling-beard-with-trimmer_613910-5073.jpg",              imageAlt: "high fade haircut professional barber",              button: { text: "Book Now" },
+              id: "premium",              title: "Potongan + Treatment",              price: "Rp100.000",              period: "/paket",              imageSrc: "http://img.b2bpic.net/free-photo/professional-barber-working-with-client-hairdressing-salon-styling-beard-with-trimmer_613910-5073.jpg?_wi=1",              imageAlt: "high fade haircut professional barber",              button: { text: "Book Now" },
               features: [
                 "Potongan rambut eksklusif 60 menit",                "Treatment rambut premium",                "Styling profesional"
               ]
@@ -138,13 +138,13 @@ export default function LandingPage() {
           tag="Portofolio"
           products={[
             {
-              id: "1",              name: "Fade Cut Modern",              price: "Rp50.000",              variant: "Potongan Fade Modern",              imageSrc: "http://img.b2bpic.net/free-photo/front-view-barber-shop-concept_23-2148506290.jpg",              imageAlt: "Fade Cut Modern - Potongan rapi dengan gradasi sempurna"
+              id: "1",              name: "Fade Cut Modern",              price: "Rp50.000",              variant: "Potongan Fade Modern",              imageSrc: "http://img.b2bpic.net/free-photo/front-view-barber-shop-concept_23-2148506290.jpg?_wi=3",              imageAlt: "Fade Cut Modern - Potongan rapi dengan gradasi sempurna"
             },
             {
-              id: "2",              name: "High Fade Classic",              price: "Rp50.000",              variant: "Potongan High Fade Klasik",              imageSrc: "http://img.b2bpic.net/free-photo/professional-barber-working-with-client-hairdressing-salon-styling-beard-with-trimmer_613910-5073.jpg",              imageAlt: "High Fade Classic - Potongan tinggi yang elegan"
+              id: "2",              name: "High Fade Classic",              price: "Rp50.000",              variant: "Potongan High Fade Klasik",              imageSrc: "http://img.b2bpic.net/free-photo/professional-barber-working-with-client-hairdressing-salon-styling-beard-with-trimmer_613910-5073.jpg?_wi=2",              imageAlt: "High Fade Classic - Potongan tinggi yang elegan"
             },
             {
-              id: "3",              name: "Modern Style Trendy",              price: "Rp75.000",              variant: "Gaya Modern Tren",              imageSrc: "http://img.b2bpic.net/free-photo/stylish-redhead-urban-traveller-male-sunglasses-holds-backpack-grey-background-studio_613910-1038.jpg",              imageAlt: "Modern Style Trendy - Potongan sesuai tren terkini"
+              id: "3",              name: "Modern Style Trendy",              price: "Rp75.000",              variant: "Gaya Modern Tren",              imageSrc: "http://img.b2bpic.net/free-photo/stylish-redhead-urban-traveller-male-sunglasses-holds-backpack-grey-background-studio_613910-1038.jpg?_wi=3",              imageAlt: "Modern Style Trendy - Potongan sesuai tren terkini"
             },
             {
               id: "4",              name: "Contemporary Cut",              price: "Rp75.000",              variant: "Potongan Kontemporer",              imageSrc: "http://img.b2bpic.net/free-photo/portrait-charismatic-sensual-male-black-sweater-creative-personality_613910-476.jpg",              imageAlt: "Contemporary Cut - Gaya kontemporer dengan sentuhan modern"
